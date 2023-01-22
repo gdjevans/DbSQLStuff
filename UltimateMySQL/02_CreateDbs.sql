@@ -1,0 +1,3 @@
+CREATE DATABASE pet_shop;
+
+CREATE DATABASE SlimeStore;
