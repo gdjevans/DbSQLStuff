@@ -1,0 +1,39 @@
+CREATE TABLE Employees (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	last_name NOT NULL VARCHAR(100),
+	first_name NOT NULL VARCHAR(100),
+	middle_name VARCHAR(100),
+	age NOT NULL INT,
+	current_status NOT NULL VARCHAR(100) DEFAULT 'employed' 
+);
+
+INSERT INTO Employees (first_name, last_name, age) VALUES ('Thomas', 'Chickenman', 87);
+-- Defining employees table
+
+CREATE TABLE employees (
+    id INT AUTO_INCREMENT,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+    middle_name VARCHAR(255),
+    age INT NOT NULL,
+    current_status VARCHAR(255) NOT NULL DEFAULT 'employed',
+    PRIMARY KEY(id)
+);
+-- Another way of defining the primary key:
+
+
+
+CREATE TABLE employees (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+    middle_name VARCHAR(255),
+    age INT NOT NULL,
+    current_status VARCHAR(255) NOT NULL DEFAULT 'employed'
+);
+-- A test INSERT:
+
+
+
+INSERT INTO employees(first_name, last_name, age) VALUES
+('Dora', 'Smith', 58);
